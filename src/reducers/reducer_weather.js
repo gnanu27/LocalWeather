@@ -7,14 +7,6 @@ export default function( state= [], action){
 		//return [action.payload.data, ...state];
 		console.log('action',action.payload)
 		return [action.payload.data]
-
-		default:
-
-		
-
-
-
-
 	}
 
 	

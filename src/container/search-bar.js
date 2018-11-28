@@ -36,6 +36,7 @@ this.onFormSubmit = this.onFormSubmit.bind(this)
 	}
 
 else{
+	
 	this.props.fetchWeather(this.state.term)
 	this.setState({term:''})
 
