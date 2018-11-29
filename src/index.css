@@ -58,9 +58,7 @@ code {
 .forecast-list{
 
 	display: block;
-	width: 50%;
-	margin: auto;
-	padding: 30px;
+	text-align: center;
 }
 
 .forecast-list li{
@@ -73,19 +71,42 @@ code {
 
 .forecast-description{
 	display:block;
-	width: 50%;
+	text-align: center;
 	margin: auto;
 	box-sizing:border-box;
 	
 }
-
 .forecast-description-main{
-	display: block;
-	width: 50%;
-	margin: auto;
+	text-align: center;
+	font-size: 1.3em;
+
+}
+
+.forecast-description-main-name{
 	box-sizing: border-box;
 	text-align: center;
+	color: #d26c22;
 	font-size: 1.5em;
+}
+
+.forecast-description-main-desc{
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.3em;
+	color: #d26c22;
+
+}
+
+.forecast-description-temp{
+
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.3em;
+	color: #d26c22;
 
 }
 
@@ -101,4 +122,40 @@ code {
 	padding: 0 20px;
 
 
+}
+
+/* Responsive */
+
+@media (max-width:900px) {
+
+
+
+.forecast-list li{
+	display: block;
+	text-decoration: none;
+	padding: 30px;
+	margin: auto;
+	text-align: center;
+}
+
+.forecast-description-main-desc{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.3em;
+}
+
+
+
+.forecast-description-temp{
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 1.3em;
+
+}
+
+	
 }

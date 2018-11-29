@@ -8,12 +8,19 @@ class WeatherData extends Component{
 		return(
 
 <div key={weatherData.id}>
-<div className="forecast-sub" >
+
+			<div className="forecast-description-main-name">
+					<p>Weather in {weatherData.name} </p>
+
+			 </div>
+
+
+		<div className="forecast-sub" >
 			<ul  className="forecast-list" >
 				<li >Humidity: {weatherData.main.humidity}%</li>
 				<li > Pressure: {weatherData.main.pressure} hPa </li>
-				<li > Pressure: {weatherData.clouds.all}% </li>
-				<li > Wind: {weatherData.wind.speed} miles/hour </li>
+				<li > Clouds: {weatherData.clouds.all}% </li>
+				<li > Wind: {weatherData.wind.speed} mph </li>
 
 
 
@@ -21,17 +28,15 @@ class WeatherData extends Component{
 			</div>
 
 			<div className="forecast-description" >
-			<div className="forecast-description-main">
-					<p>weather in {weatherData.name} </p>
 
-			 </div>
 				
-			<div className="forecast-description-main">
+			<div className="forecast-description-temp">
 			<ul className="forecast-description-main-list">
 
-					<li>  <h1> {weatherData.main.temp} °F</h1> </li>
+					<li>  <p> {weatherData.main.temp}°F</p> </li>
 
-					<li>  <h2> {weatherData.weather[0].main}</h2> </li>
+					<li>  <p> {weatherData.weather[0].main}</p> </li>
+
 
 			</ul>
 
@@ -52,6 +57,18 @@ class WeatherData extends Component{
 			</ul>
 
 			</div>
+
+			<div className="forecast-description-main-desc">
+
+			<ul className="forecast-description-main-list">
+
+				<li>  <p> Mostly {weatherData.weather[0].description} throught out the day </p> </li>
+
+			</ul>
+
+			</div>
+
+
 
  			</div> 
  			</div>
